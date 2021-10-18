@@ -14,7 +14,7 @@ import Header from './Shared/Header/Header';
 
 function App() {
   return (
-    <div className="App">
+    <div className="">
       
       <Router>
         <Header></Header>

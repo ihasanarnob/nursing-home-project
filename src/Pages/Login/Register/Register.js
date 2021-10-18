@@ -3,14 +3,13 @@ import useFirebase from '../../../hooks/useFirebase';
 
 const Register = () => {
 
- const {handleEmail,handlePassword,handleSignUp,error,signInUsingGoogle,handleName} = useFirebase();
+ const {handleEmail,handlePassword,handleSignUp,error,signInUsingGoogle,handleName,toggleLogin,isLogin} = useFirebase();
 
     return (
         <div className="container">
-            <h2>Please Sign Up</h2>
-        <Form onSubmit={handleSignUp} className=" mx-auto">
-            <Form.Label>Username</Form.Label>
-            <Form.Control onBlur={handleName} type="inputName" placeholder="Enter name " />
+            <h2>Please {isLogin ?  'Log In' : 'Register'}</h2>
+            <Form onSubmit={handleSignUp} className=" mx-auto">
+            { !isLogin && <><Form.Label>Username</Form.Label><Form.Control onBlur={handleName} type="inputName" placeholder="Enter name " /></>}
             <br />
             <Form.Group className="mb-3" controlId="formBasicEmail">
                 <Form.Label>Email address</Form.Label>
@@ -25,13 +24,13 @@ const Register = () => {
                 <Form.Control onBlur={handlePassword} type="password" placeholder="Password" required/>
             </Form.Group>
             <Form.Group className="mb-3" controlId="formBasicCheckbox">
-                <Form.Check type="checkbox" label="Already Signed Up? " />
+                <Form.Check onChange={toggleLogin} type="checkbox" label="Already Signed Up? " />
             </Form.Group>
             <div>  
             <h6 className="text-danger p-2"> {error} </h6>
              </div>
             <Button variant="primary" type="submit">
-                Sign Up
+                {isLogin ? "Log In " : "Register"}
             </Button>
         </Form>
             <br /><br />

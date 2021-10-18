@@ -12,6 +12,7 @@ const useFirebase = () => {
 
     const [email,setEmail] = useState({});
     const [password,setPassword] = useState({});
+    const [isLogin,setIsLogin] = useState(false);
 
     const handleName = e =>{
         setName(e.target.value);
@@ -31,20 +32,15 @@ const useFirebase = () => {
         })
     }
 
-    // log in process 
-    const createNewUser = (email,password) =>{
-        createUserWithEmailAndPassword(auth,email,password)
-        .then(result =>{
-            setUser(result.user);
-            setError('');
-            setUserName();
-        })
-        .catch(error=>{
-            setError(error.message)
-        })
-    }
 
-    
+
+
+    // log in process 
+    // ................................
+
+    const toggleLogin = (e) =>{
+        setIsLogin(e.target.checked);
+    }
 
     const handleSignUp = (e) =>{
         e.preventDefault();
@@ -52,24 +48,21 @@ const useFirebase = () => {
             setError(' Password should be at least 6 characters')
             return;
         }
-        createUserWithEmailAndPassword(auth,email,password)
-        .then(result => {
-            setUser(result.user);
-            console.log(result.user);
-            setError('');
-            emailVerify();
 
-        })
-        .catch(error=>{
-            setError(error.message)
-        })
+        if (isLogin) {
+            processLogin(email, password);
+          }
+          else {
+            createNewUser(email, password);
+          }
+        
     }
 
     const emailVerify = ()=>{
         sendEmailVerification(auth.currentUser)
         .then(result =>{
             setUser(result?.user);
-            console.log(setUser);
+            console.log(user);
         })
     }
 
@@ -103,8 +96,37 @@ const useFirebase = () => {
 
 // email implement
 
+const processLogin = (email, password) => {
+    signInWithEmailAndPassword(auth, email, password)
+      .then(result => {
+        const user = result.user;
+        console.log(user);
+        setError('');
+      })
+      .catch(error => {
+        setError(error.message);
+      })
+  }
+
+const createNewUser = (email,password) =>{
+    createUserWithEmailAndPassword(auth,email,password)
+    .then(result =>{
+        setUser(result.user);
+        setError('');
+        setUserName();
+        emailVerify();
+
+    })
+    .catch(error=>{
+        setError(error.message)
+    })
+}
+
+
 
     return {
+        isLogin,
+        toggleLogin,
         user,
         error,
         signInUsingGoogle,
