@@ -1,9 +1,9 @@
 import { Button, Form } from 'react-bootstrap';
-import useFirebase from '../../../hooks/useFirebase';
+import useAuth from '../../../hooks/useAuth';
 
 const Register = () => {
 
- const {handleEmail,handlePassword,handleSignUp,error,signInUsingGoogle,handleName,toggleLogin,isLogin} = useFirebase();
+ const {handleEmail,handlePassword,handleSignUp,error,signInUsingGoogle,handleName,toggleLogin,isLogin} = useAuth();
 
     return (
         <div className="container">

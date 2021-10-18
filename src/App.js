@@ -1,11 +1,12 @@
 
 import { BrowserRouter as Router, Switch,Route } from 'react-router-dom';
 import './App.css';
+import AuthProvider from './contexts/AuthProvider';
 import About from './Pages/About/About';
 import Blog from './Pages/Blog/Blog';
 import Error404 from './Pages/Error404/Error404';
 import Home from './Pages/Home/Home/Home';
-import Login from './Pages/Login/Login/Login';
+import PrivateRoute from './Pages/Login/PrivateRoute/PrivateRoute';
 import Register from './Pages/Login/Register/Register';
 import Service from './Pages/Service/Service';
 import Services from './Pages/Services/Services';
@@ -15,7 +16,7 @@ import Header from './Shared/Header/Header';
 function App() {
   return (
     <div className="">
-      
+      <AuthProvider>
       <Router>
         <Header></Header>
         <Switch>
@@ -25,25 +26,23 @@ function App() {
           <Route path="/home">
             <Home></Home>
           </Route>
-          <Route path="/blog">
+          <PrivateRoute path="/blog">
             <Blog></Blog>
-          </Route>
+          </PrivateRoute>
           <Route path="/about">
             <About></About>
           </Route>
           <Route path="/services">
             <Services></Services>
           </Route>
-          <Route path="/service/:singleService">
+          <PrivateRoute path="/service/:singleService">
             <Service></Service>
-          </Route>
+          </PrivateRoute>
           
           <Route path="/register">
             <Register></Register>
           </Route>
-          <Route path="/login">
-            <Login></Login>
-          </Route>
+          
 
          <Route path ="*">
            <Error404></Error404>
@@ -52,6 +51,7 @@ function App() {
         </Switch>
         <Footer></Footer>
       </Router>
+      </AuthProvider>
 
     </div>
   );
