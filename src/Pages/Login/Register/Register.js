@@ -6,8 +6,8 @@ const Register = () => {
  const {handleEmail,handlePassword,handleSignUp,error,signInUsingGoogle,handleName,toggleLogin,isLogin} = useAuth();
 
     return (
-        <div className="container">
-            <h2>Please {isLogin ?  'Log In' : 'Register'}</h2>
+        <div className="container my-5">
+            <h2 className="text-primary">Please {isLogin ?  'Log In' : 'Register'}</h2>
             <Form onSubmit={handleSignUp} className=" mx-auto">
             { !isLogin && <><Form.Label>Username</Form.Label><Form.Control onBlur={handleName} type="inputName" placeholder="Enter name " /></>}
             <br />
@@ -34,8 +34,8 @@ const Register = () => {
             </Button>
         </Form>
             <br /><br />
-        <div mt-5>
-            <h5>Sign up with Google </h5>
+        <div>
+            <h5 className="mb-2">Sign up with Google </h5>
             <Button onClick={signInUsingGoogle} variant="primary" type="submit">Sign Up with Google </Button>
         </div>
         </div>

@@ -6,9 +6,9 @@ Website Live Link attached [Pills & Cure](https://pills-cure-medical.web.app/).
 
   - Pills & Cure is dedicated to providing competent and compassionate nursing care. Our company was founded on these ideals in 2005 and today enjoys the finest of reputations in the home nursing field.
 
-  -Our caring staff of trained professionals and nurse’s aides is reliable, well skilled individuals who take pride in the excellent work they perform. We provide registered nurses, licensed practical nurses and nurse assistants. Our services are available 365 days per year and 24 hours each day. For any emergency, a 24 hour per day “on call” service is provided by our management staff.
+  - Our caring staff of trained professionals and nurse’s aides is reliable, well skilled individuals who take pride in the excellent work they perform. We provide registered nurses, licensed practical nurses and nurse assistants. Our services are available 365 days per year and 24 hours each day. For any emergency, a 24 hour per day “on call” service is provided by our management staff.
 
-  -Quality nursing services are built on strong, understanding and involved management. We emphasize and encourage the personal interacting of our staff with our patients and their families. We realize an illness not only affects the patient, but everyone who touches that individual’s life.
+  - Quality nursing services are built on strong, understanding and involved management. We emphasize and encourage the personal interacting of our staff with our patients and their families. We realize an illness not only affects the patient, but everyone who touches that individual’s life.
 
 - Messege
 
