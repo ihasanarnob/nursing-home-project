@@ -1,70 +1,31 @@
-# Getting Started with Create React App
+# Pills & Cure Nursing Home
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Website Live Link attached [Pills & Cure](https://pills-cure-medical.web.app/).
 
-## Available Scripts
+- About Us
 
-In the project directory, you can run:
+  - Pills & Cure is dedicated to providing competent and compassionate nursing care. Our company was founded on these ideals in 2005 and today enjoys the finest of reputations in the home nursing field.
 
-### `npm start`
+  -Our caring staff of trained professionals and nurse’s aides is reliable, well skilled individuals who take pride in the excellent work they perform. We provide registered nurses, licensed practical nurses and nurse assistants. Our services are available 365 days per year and 24 hours each day. For any emergency, a 24 hour per day “on call” service is provided by our management staff.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+  -Quality nursing services are built on strong, understanding and involved management. We emphasize and encourage the personal interacting of our staff with our patients and their families. We realize an illness not only affects the patient, but everyone who touches that individual’s life.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- Messege
 
-### `npm test`
+  - In this ever changing field of health care where shorter hospital stays is the trend, the need for skilled as well as non-skilled nursing in the private home increases. We at home nursing service in bangladesh have been helping families achieve the highest level of care possible in home nursing services. Our primary concern is to provide our patient with the exact care prescribed by his or her physician. We are in close contact with a patient’s physician at all times and work specifically with written doctor’s orders.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- More
+  - Pills & Cure is a Home Health nursing home service in Dhaka Agency. The office is located in House- 40, Nadda Road, Bashundhara, Dhaka. It employs Registered Nurses, Licensed Practical Nurses, and Nursing Assistants. Services can be provided by a Registered Nurse on an intermittent visit basis as outlined by Medicare regulations, Home Nursing Services can also be provided as warranted.
 
-### `npm run build`
+-Mission
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+-Home nursing service in Bangladesh provides services to families to help clients remain in their home.
+We enable the client to maintain an optimum level of well-being while maximizing their independence and freedom of choice at a very affordable cost for both long and short-term care.Clients and their families receive one-on-one attention from our professional staff
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+-Additional Information
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+    -We are a small family owned and operated business.
+    -We have been in business since 2005.
+    -We are State licensed and Medicare certified.
+    -We do through background screening of our staff including previous work history checks, criminal   background checks, child abuse clearance checks and drug abuse tests when warranted.
+    -Our staff is actually hired employees they are not contracted out from other agencies.
