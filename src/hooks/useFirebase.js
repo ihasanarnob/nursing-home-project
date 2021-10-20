@@ -34,11 +34,6 @@ const useFirebase = () => {
     }
 
 
-
-
-    // log in process 
-    // ................................
-
     const toggleLogin = (e) =>{
         setIsLogin(e.target.checked);
     }
@@ -63,7 +58,6 @@ const useFirebase = () => {
         sendEmailVerification(auth.currentUser)
         .then(result =>{
             setUser(result?.user);
-            console.log(user);
         })
     }
 
@@ -91,7 +85,7 @@ const useFirebase = () => {
             setIsLoading(false);
         });
 
-    } ,[]);
+    } ,[auth]);
 
     const logOut =() =>{
         setIsLoading(true);
@@ -100,21 +94,22 @@ const useFirebase = () => {
         .finally(()=> setIsLoading(false))
     }
 
-// email implement
 
 const processLogin = (email, password) => {
+    setIsLoading(true)
     signInWithEmailAndPassword(auth, email, password)
       .then(result => {
-        const user = result.user;
-        console.log(user);
+        setUser(result.user);
         setError('');
       })
       .catch(error => {
         setError(error.message);
       })
+      .finally(()=> setIsLoading(false)) 
   }
 
 const createNewUser = (email,password) =>{
+    setIsLoading(true)
     createUserWithEmailAndPassword(auth,email,password)
     .then(result =>{
         setUser(result.user);
@@ -123,11 +118,12 @@ const createNewUser = (email,password) =>{
         emailVerify();
 
     })
+    .finally(()=> setIsLoading(false))
+
     .catch(error=>{
         setError(error.message)
     })
 }
-
 
 
     return {

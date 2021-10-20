@@ -6,14 +6,14 @@ import useAuth from '../../../hooks/useAuth';
 const PrivateRoute = ({ children, ...rest }) => {
     const {user,isLoading} = useAuth();
     if(isLoading){
-        return <Spinner animation="border" />
+        return  <div className="d-flex justify-content-center m-3" > <Spinner animation="border" /> </div>
     }
     return (
         <Route
         
         {...rest}
         render={
-            ({location}) => user.email ? children : <Redirect
+            ({location}) => user?.email ? children : <Redirect
             to={{
                 pathname: "/register",
                 state: { from: location }
