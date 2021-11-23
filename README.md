@@ -28,4 +28,4 @@ Website Live Link attached [Pills & Cure](https://pills-cure-medical.web.app/).
   - We are a small family owned and operated business.
   - We have been in business since 2005.
   - We are State licensed and Medicare certified.
-  - Our staff is actually hired employees they are not contracted out from other agencies.
+  - Our staff is actually hired employees they are not contracted out from other agencies...
